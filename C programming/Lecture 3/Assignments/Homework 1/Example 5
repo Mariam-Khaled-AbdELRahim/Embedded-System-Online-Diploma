@@ -1,1 +1,12 @@
+#include <stdio.h>
 
+int main()
+{
+    char a;
+    printf("Enter a character: ");
+    fflush(stdout);
+    scanf("%c",&a);
+    fflush(stdin);
+    printf("\n ASCII code of %c = %d" ,a,a); 
+    fflush(stdout);
+}
