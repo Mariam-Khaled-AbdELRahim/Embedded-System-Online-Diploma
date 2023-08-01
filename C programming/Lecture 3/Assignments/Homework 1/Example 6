@@ -1,1 +1,21 @@
+#include <stdio.h>
 
+int main()
+{
+    float a ,b ,temp;
+    printf("Enter the value of a= ");
+    fflush(stdout);
+    scanf("%f",&a);
+    fflush(stdin);
+    printf("\n Enter the value of b= ");
+    fflush(stdout);
+    scanf("%f",&b);
+    fflush(stdin);
+    a=temp;
+    temp=b;
+    a=b;
+    printf("\n After swapping, value of a=%f ",a); 
+    fflush(stdout);
+    printf("\n After swapping, value of b=%f ",b);
+    fflush(stdout);
+}
