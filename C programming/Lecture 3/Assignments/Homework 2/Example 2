@@ -1,1 +1,17 @@
+#include <stdio.h>
 
+int main()
+{
+    char c;
+    printf("Enter an alphabet: ");
+    fflush(stdout);
+    scanf("%c",&c);
+    if(c=='i'|| c=='e' || c=='o'|| c=='a'||c=='u'||c=='A'||c=='E'||c=='I'||c=='U'||c=='O')
+    {
+        printf("%c is vowel.",c);
+    }
+    else
+    {
+        printf("%c is a constant.",c);
+    }
+}
