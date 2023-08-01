@@ -1,1 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+    int num1 , num2 ,sum;
+    printf("Enter 2 integers: ");
+    fflush(stdout);
+    scanf("%d %d",&num1,&num2);
+    fflush(stdin);
+    sum=num1 + num2;
+    printf("\n Sum: %d",sum);
+    fflush(stdout);
+    
+}
 
