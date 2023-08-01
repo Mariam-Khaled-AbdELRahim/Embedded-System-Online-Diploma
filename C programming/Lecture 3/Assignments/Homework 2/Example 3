@@ -1,1 +1,32 @@
+#include <stdio.h>
 
+int main()
+{
+    float a, b,c;
+    printf("Enter three numbers: ");
+    fflush(stdout);
+    scanf("%f %f %f",&a,&b,&c);
+    fflush(stdin);
+    if(a>b)
+    {
+        if(a>c)
+        {
+            printf("\nLargest number is %f",a);
+        }
+        else
+        {
+            printf("\nLargest number is %f",c);
+        }
+    }
+    else
+    {
+        if(b>c)
+        {
+            printf("\nLargest number is %f",b);
+        }
+        else
+        {
+            printf("\nLargest number is %f",a);
+        }
+    }
+}
