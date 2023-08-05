@@ -1,1 +1,37 @@
+#include <stdio.h>
 
+
+int main()
+{
+	float a[1][1], b[1][1], sum[1][1];
+	printf("Enter the elements of the 1st matrix\n");
+	for (int i = 0; i <= 1; i++)
+	{
+		for (int j = 0; j <= 1; j++)
+		{
+			printf("Enter a%d%d:", i + 1, j + 1);
+			scanf_s ("%f", &a[i][j]);
+		}
+	}
+	printf("Enter the elements of the 2nd matrix\n");
+	for (int i = 0; i <= 1; i++)
+	{
+		for (int j = 0; j <= 1; j++)
+		{
+			printf("Enter b%d%d:", i + 1, j + 1);
+			scanf_s("%f", &b[i][j]);
+		}
+	}
+	printf("\n\nsum of matrix is \n");
+	for (int i = 0; i <= 1; i++)
+	{
+		for (int j = 0; j <= 1; j++)
+		{
+			sum[i][j] = a[i][j] + b[i][j];
+			printf("%.2f ", sum[i][j]);
+		}
+		printf("\n");
+	}
+
+	return 0;
+}
