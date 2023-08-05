@@ -1,1 +1,23 @@
+#include <stdio.h>
 
+
+int main()
+{
+	int n;
+	printf("Enter the number of data: ");
+	scanf_s("%d", &n);
+	float array[100];
+	float sum=0;
+	if (n > 100 || n <= 0)
+	{
+		printf("Error!! Numer should be in the range of 1-100");
+	}
+	for (int i = 0; i < n; i++)
+	{
+		printf("Enter number: ");
+		scanf_s("%f", &array[i]);
+		sum += array[i];
+	}
+	printf("Average is %.2f", sum);
+	return 0;
+}
