@@ -1,1 +1,25 @@
-
+#include <stdio.h>
+int main()
+{
+	int n, x[100], num ,loc;
+	printf("Enter number of elements: ");
+	scanf_s("%d", &n);
+	for (int i = 0; i < n; i++)
+	{
+		scanf_s("%d", &x[i]);
+	}
+	printf("Enter the element to be inserted: ");
+	scanf_s("%d", &num);
+	printf("Enter the location: ");
+	scanf_s("%d", &loc);
+	for (int i = n; i >= loc; i--)
+	{
+		x[i] = x[i - 1];
+	}
+	x[loc - 1] = num;
+	for (int i = 0; i <= n; i++)
+	{
+		printf("%d  ", x[i]);
+	}
+	return 0;
+}
